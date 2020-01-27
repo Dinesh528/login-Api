@@ -11,7 +11,7 @@ app.use(bodyParser.json());
 const cors = require('cors');
 app.use(cors());
 
-const PORT = 4000;
+const PORT = process.env.PORT || 4000;
 
 const mongoose =require('mongoose');
 mongoose.Promise = global.Promise;
